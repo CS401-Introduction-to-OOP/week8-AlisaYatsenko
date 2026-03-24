@@ -2,13 +2,13 @@ namespace Week8;
 
 public abstract class DeliveryItem
 {
-    public string TrackingNumber { get; }
-    public double Weight { get; }
+    public string TrackingNumber { get; set; }
+    public double Weight { get; set; }
 
     public DeliveryItem(string trackingnumber, double weight)
     {
-        this.TrackingNumber = trackingnumber;
-        this.Weight = weight;
+        TrackingNumber = trackingnumber;
+        Weight = weight;
     }
 
     public abstract double CalculateCost();
