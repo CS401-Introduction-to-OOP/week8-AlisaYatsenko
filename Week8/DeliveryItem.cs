@@ -11,7 +11,7 @@ public abstract class DeliveryItem
         this.Weight = weight;
     }
 
-    public abstract void CalculateCost();
+    public abstract double CalculateCost();
 
     public virtual void PrintInfo()
     {

@@ -7,10 +7,10 @@ public class Parcel : DeliveryItem
     {
         this.Dimensions = dimensions;
     }
-    public override void CalculateCost ()
+    public override double CalculateCost ()
     {
-        var price = 50 + Weight*25;
-        Console.WriteLine ($"Price : { price }");
+        double price = 50 + Weight*25;
+        return price;
     }
     public override void PrintInfo ()
     {
